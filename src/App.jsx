@@ -90,12 +90,18 @@ function App() {
                   placeholder="Enter city name"
                   className="search-input"
                   onChange={(e) => setInputValue(e.target.value)}
-                  onKeyDown={(e) =>{
-                    if(e.key === "Enter"){
+                  onKeyDown={(e) => {
+                    if (e.key === "Enter") {
                       setCity(inputValue);
                     }
                   }}
               />
+              <button
+                  className="search-button"
+                  onClick={() => setCity(inputValue)}
+              >
+                Search
+              </button>
             </div>
           </div>
           {error && renderError()}
