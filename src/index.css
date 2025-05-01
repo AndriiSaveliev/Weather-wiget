@@ -43,21 +43,26 @@ p {
 
 /* Поле поиска */
 .search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* Отступ между input и кнопкой */
+  margin-bottom: 20px;
 }
 
 .search-input {
-  width: 100%;
-  padding: 10px 12px; /* Снижены отступы внутри */
-  font-size: 0.9rem; /* Уменьшен размер текста */
-  border: 1px solid rgba(255, 255, 255, 0.5); /* Полупрозрачная граница */
+  flex: 1; /* Растягивает input на доступное пространство */
+  padding: 10px 12px;
+  font-size: 0.9rem;
+  border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 5px;
   background: rgba(255, 255, 255, 0.1);
-  color: #f0f7ed; /* Светлый текст */
+  color: #f0f7ed;
   outline: none;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
   box-sizing: border-box;
-  margin-bottom: 20px;
 }
+
 
 .search-input:focus {
   border-color: #63b3ed;
@@ -107,4 +112,19 @@ p {
   color: #cbd5e0; /* Мягкий серый */
   margin-top: 8px; /* Уменьшен отступ */
   line-height: 1.4; /* Снижен межстрочный интервал */
+}
+
+.search-button {
+  padding: 10px 16px;
+  background-color: #1e40af;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #005fd1;
 }
