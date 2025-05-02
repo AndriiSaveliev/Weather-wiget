@@ -18,7 +18,7 @@ This is a simple weather widget built with **React**, using the **WeatherAPI.com
 
 ## 🚀 Live Demo
 
-👉 [Click here to view the live site](weather-wiget.vercel.app)
+👉 [Click here to view the live site](https://weather-wiget.vercel.app)
 
 ## 📦 Tech Stack
 
