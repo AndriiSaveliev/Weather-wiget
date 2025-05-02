@@ -36,7 +36,7 @@ function App() {
       try{
 
         const query = city.trim() ? city : `${coords.latitude},${coords.longitude}`;
-        const res = await fetch(`http://api.weatherapi.com/v1/current.json?key=${KEY}&q=${query}`);
+        const res = await fetch(`https://api.weatherapi.com/v1/current.json?key=${KEY}&q=${query}`);
         const data = await res.json();
 
         if(data.error) {
